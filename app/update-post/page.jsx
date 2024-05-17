@@ -54,25 +54,6 @@ const EditPost = () => {
       } finally {
         setSubmitting(false);
       }
-  
-
-    //   try {
-    //     const response = await fetch(`/api/post/${postId}`, {
-    //       method: 'PATCH',
-    //       body: JSON.stringify({
-    //         content: post.content,
-    //         tag: post.tag
-    //       }),
-    //     });
-
-    //     if(response.ok) {
-    //       router.push('/')
-    //     }
-    //   } catch (error) {
-    //     console.log(error);
-    //   } finally {
-    //     setSubmitting(false)
-    //   }
     }
 
   return (

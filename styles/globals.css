@@ -8,6 +8,7 @@
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
 
+
 .main {
   width: 100vw;
   min-height: 100vh;
@@ -78,7 +79,7 @@
 }
 
 .black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-transparent hover:text-black text-center text-sm font-inter flex items-center justify-center;
 }
 
 .outline_btn {

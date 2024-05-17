@@ -15,10 +15,30 @@ const CardList = ({ data, handleTagClick }) => {
 
 const Feed = () => {
   const [searchText, setSearchText] = useState('');
+  const [searchTimeout, setSearchTimeout] = useState(null);
+  const [searchedResults, setSearchedResults] = useState([]);
   const [posts, setPosts] = useState([]);
 
+  // const filterPrompts = (searchtext) => {
+  //   const regex = new RegExp(searchtext, "i")
+  //   return posts.filter(
+  //     (item) =>
+  //       regex.test(item.creator.username) ||
+  //       regex.test(item.tag) ||
+  //       regex.test(item.prompt)
+  //   );
+  // };
+
   const handleChange = (e) => {
-    
+  //   clearTimeout(searchTimeout);
+  //   setSearchText(e.target.value);
+
+  //   setSearchTimeout(
+  //     setTimeout(() => {
+  //       const searchResult = filterPrompts(e.target.value);
+  //       setSearchedResults(searchResult);
+  //     }, 500)
+  //   );
   }
 
   useEffect(() => {
@@ -34,9 +54,9 @@ const Feed = () => {
   
   return (
     <section className="feed">
-      <form className="relative w-full flex-center">
+      {/* <form className="relative w-full flex-center">
         <input type="text" name="" id="" placeholder='Search' value={searchText} onChange={handleChange} required className='search_input peer' />
-      </form>
+      </form> */}
       <CardList data={posts} handleTagClick={() => {}} />
     </section>
   )
